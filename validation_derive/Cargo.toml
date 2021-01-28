@@ -1,0 +1,22 @@
+[package]
+name = "validation_derive"
+version = "0.1.0"
+authors = ["Joseph.Orme <joseph.orme@asurion.com>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+lazy_static = "1.4.0"
+proc-macro2 = "1.0.24"
+proc-macro-error = "1.0.4"
+quote = "1.0.7"
+regex = "1.4.2"
+
+[dependencies.syn]
+version = "1.0.54"
+features = ["extra-traits"]
+
+[dependencies.validation]
+path = "../validation"
